@@ -32,7 +32,7 @@ filetype plugin indent on    " required
 "-----------------------------------
 " Colors
 :syntax on
-:colorscheme desert
+:colorscheme darcula
 
 
 "-----------------------------------
