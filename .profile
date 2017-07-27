@@ -40,3 +40,7 @@ export PATH="$PATH:`yarn global bin`"
 
 # PhpStorm
 export PATH=${PATH}:/opt/phpstorm/bin
+
+# Ubuntu make installation of Ubuntu Make binary symlink
+PATH=/home/evan/.local/share/umake/bin:$PATH
+
