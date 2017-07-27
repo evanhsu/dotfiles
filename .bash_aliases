@@ -7,6 +7,12 @@ alias gs='git status'
 alias gl='git log --oneline --decorate --all --graph'
 alias gll='git log --oneline --all --graph --pretty=format:"%C(yellow)%h %C(auto)%d %C(reset)- %s {%C(green)%an, %ar%C(reset)}"'
 alias gf='git fetch'
+alias gc='git add . && git commit -m '
+
+# Aliases for Tmux
+alias tml='tmux list-sessions'
+alias tma='tmux attach -t '
+alias tmn='tmux new -S '
 
 # Aliases for Composer
 alias composer='php /usr/local/bin/composer.phar'
