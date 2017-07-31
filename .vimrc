@@ -86,7 +86,7 @@ set splitright
 :nnoremap <leader>ev :vsplit $MYVIMRC<cr>
 
 
-nmap <C-b> :NERDTreeToggle<cr>
+nmap <C-n> :NERDTreeToggle<cr>
 
 
 " Source the .vimrc file (run it as vimscript, which will apply changes without having to restart Vim)

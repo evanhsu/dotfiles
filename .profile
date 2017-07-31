@@ -40,3 +40,4 @@ export PATH="$PATH:`yarn global bin`"
 
 # PhpStorm
 export PATH=${PATH}:/opt/phpstorm/bin
+source ~/.nvm/nvm.sh

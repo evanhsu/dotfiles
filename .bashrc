@@ -118,3 +118,6 @@ fi
 
 export NVM_DIR="/home/evan/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+
+# added by travis gem
+[ -f /home/evan/.travis/travis.sh ] && source /home/evan/.travis/travis.sh
