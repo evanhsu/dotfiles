@@ -32,7 +32,7 @@ export PATH=${PATH}:${JAVA_HOME}/bin
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh" # This loads nvm
 
-nvm alias default 8.1.1
+nvm alias default 8.2.0
 nvm use default
 
 # Yarn
@@ -40,4 +40,7 @@ export PATH="$PATH:`yarn global bin`"
 
 # PhpStorm
 export PATH=${PATH}:/opt/phpstorm/bin
-source ~/.nvm/nvm.sh
+
+# Ubuntu make installation of Ubuntu Make binary symlink
+PATH=/home/evan/.local/share/umake/bin:$PATH
+
