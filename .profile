@@ -32,11 +32,14 @@ export PATH=${PATH}:${JAVA_HOME}/bin
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh" # This loads nvm
 
-nvm alias default 8.2.0
-nvm use default
+[ -s "$NVM_DIR/nvm.sh" ] && nvm alias default 8.2.0
+[ -s "$NVM_DIR/nvm.sh" ] && nvm use default
 
 # Yarn
-export PATH="$PATH:`yarn global bin`"
+command -v yarn >/dev/null 2>&1 && {
+	export PATH="$PATH:`yarn global bin`"
+}
+
 
 # PhpStorm
 export PATH=${PATH}:/opt/phpstorm/bin

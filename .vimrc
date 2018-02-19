@@ -47,6 +47,10 @@ set hlsearch
 " Set font
 set guifont=Consolas:h10:cANSI
 
+" Set tab width
+set tabstop=4
+set shiftwidth=4
+set expandtab
 
 " Set window size
 " set lines=100 columns=150
