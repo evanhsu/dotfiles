@@ -30,10 +30,11 @@ export JAVA_HOME=${HOME}/jdk1.8.0_121
 export PATH=${PATH}:${JAVA_HOME}/bin
 
 export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh" # This loads nvm
-
-[ -s "$NVM_DIR/nvm.sh" ] && nvm alias default 8.2.0
-[ -s "$NVM_DIR/nvm.sh" ] && nvm use default
+if [ -s "$NVM_DIR/nvm.sh" ]; then
+    . "$NVM_DIR/nvm.sh" # This loads nvm
+    nvm alias default 8.2.0
+    nvm use default
+fi
 
 # Yarn
 command -v yarn >/dev/null 2>&1 && {
