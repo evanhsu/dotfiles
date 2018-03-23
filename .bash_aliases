@@ -12,7 +12,7 @@ alias gc='git add . && git commit -m '
 # Aliases for Tmux
 alias tml='tmux list-sessions'
 alias tma='tmux attach -t '
-alias tmn='tmux new -S '
+alias tmn='tmux new -s '
 
 # Aliases for Composer
 alias composer='php /usr/local/bin/composer.phar'
