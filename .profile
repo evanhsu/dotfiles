@@ -48,3 +48,11 @@ export PATH=${PATH}:/opt/phpstorm/bin
 # Ubuntu make installation of Ubuntu Make binary symlink
 export PATH=${PATH}:${HOME}/.local/share/umake/bin
 
+# Add Composer's global vendor folder to path
+export PATH=${PATH}:$HOME/.config/composer/vendor/bin
+
+# Add GoLang
+export PATH=${PATH}:/opt/go/bin
+
+# Run Fusuma to capture swipe gestures
+fusuma -d --config=~/.fusuma.yml
