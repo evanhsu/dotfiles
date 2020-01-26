@@ -90,8 +90,11 @@ set splitright
 :nnoremap <leader>ev :vsplit $MYVIMRC<cr>
 
 
+" Open Nerdtree by pressing ctrl+n
 nmap <C-n> :NERDTreeToggle<cr>
 
+" Set Nerdtree to show hidden files by default
+let NERDTreeShowHidden=1
 
 " Source the .vimrc file (run it as vimscript, which will apply changes without having to restart Vim)
 :nnoremap <leader>sv :source $MYVIMRC<cr>
