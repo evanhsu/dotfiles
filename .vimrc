@@ -23,10 +23,18 @@ Plugin 'VundleVim/Vundle.vim'
 " Plugins
 Plugin 'scrooloose/nerdtree'
 
+" Both of these plugins are needed for markdown support
+" https://github.com/plasticboy/vim-markdown
+Plugin 'godlygeek/tabular'
+Plugin 'plasticboy/vim-markdown'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
+
+"-----------------------------------
+" Markdown-specific code folding disabled (don't fold headings by default)
+let g:vim_markdown_folding_disabled = 1
 
 
 "-----------------------------------
