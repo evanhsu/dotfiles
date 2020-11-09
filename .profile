@@ -53,6 +53,9 @@ export PATH="/usr/local/sbin:$PATH"
 # Add composer vendor code to path (Laravel installer)
 # export PATH="~/.composer/vendor/bin:$PATH"
 
+# Add GoLang
+#export PATH=${PATH}:/opt/go/bin
+
 # Add the protobuf compiler "protoc" to the path
 #export PATH="~/Development/grpc/bins/opt:$PATH"
 #export PATH="/Users/ehsu2/Development/grpc/bins/opt:$PATH"
@@ -63,7 +66,6 @@ export PATH=${PATH}:/opt/phpstorm/bin
 
 # Ubuntu make installation of Ubuntu Make binary symlink
 export PATH=${PATH}:${HOME}/.local/share/umake/bin
-
 
 # Activate auto-complete for bash
 if [ -f $(brew --prefix)/etc/bash_completion ]; then

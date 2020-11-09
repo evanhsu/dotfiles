@@ -1,0 +1,46 @@
+swipe:
+  2:
+    left:
+      command: 'xdotool key alt+Left' # Browser 'back'
+    right:
+      command: 'xdotool key alt+Right' # Browser 'forward'
+  3:
+    left:
+      command: 'xdotool key super+ctrl+Left' # Tile/dock window left
+    right:
+      command: 'xdotool key super+ctrl+Right' # Tile/dock window right
+    up:
+      command: 'xdotool key super+Down'
+    down:
+      command: 'xdotool key super+Up'
+  4:
+    left:
+      command: 'xdotool key super+ctrl+Left' # Tile/dock window left
+    right:
+      command: 'xdotool key super+ctrl+Right' # Tile/dock window right
+    up:
+      command: 'xdotool key super+ctrl+Up' # Maximize window
+    down:
+      command: 'xdotool key super+ctrl+Down' # Restore window (unmaximize)
+pinch:
+  2:
+    in:
+      command: 'xdotool key ctrl+plus'
+      threshold: 0.1
+    out:
+      command: 'xdotool key ctrl+minus'
+      threshold: 0.1
+  5:
+    out:
+      command: 'xdotool key super+s'
+    in:
+      command: 'xdotool key super+s'
+
+threshold:
+  swipe: 0.4
+  pinch: 1
+
+interval:
+  swipe: 0.5
+  pinch: 1
+
