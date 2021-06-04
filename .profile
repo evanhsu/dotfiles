@@ -35,9 +35,11 @@ export PATH=${PATH}:${ANDROID_HOME}/platform-tools
 # export PATH=${PATH}:${JAVA_HOME}/bin
 
 # Add NVM to path
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-nvm alias default lts/dubnium
+if [ -f $HOME/.nvm ]; then
+    export NVM_DIR="$HOME/.nvm"
+    [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+    nvm alias default lts/dubnium
+fi
 
 # Yarn
 command -v yarn >/dev/null 2>&1 && {

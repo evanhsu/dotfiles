@@ -14,13 +14,13 @@ alias gco='git checkout'
 alias gpr='git pull --rebase'
 
 # Git branch aliases
-alias gbcurrent="git branch | grep \* | cut -d ' ' -f2" # "git branch current"
+# alias gbcurrent="git branch | grep \* | cut -d ' ' -f2" # "git branch current" # This alias causes errors in the console when a new shell is launched
 alias gbDa='git branch | egrep -v "(master|\*)" | xargs git branch -D' # "git branch delete all"
-alias gbn='git fetch && git checkout origin/master && git checkout -b' # "git branch new"
+#alias gbn='git fetch && git checkout origin/master && git checkout -b' # "git branch new"
 
 # Git reset aliases
-alias grorigin="git fetch && sleep 1 && git reset --hard origin/$(gbcurrent)" # "git reset origin"
-alias grs="git reset --soft $(git merge-base master $(gbcurrent)) && git status" # "git reset soft"
+#alias grorigin="git fetch && sleep 1 && git reset --hard origin/$(gbcurrent)" # "git reset origin"
+#alias grs="git reset --soft $(git merge-base master $(gbcurrent)) && git status" # "git reset soft"
 
 # Aliases for Tmux
 alias tml='tmux list-sessions'
@@ -39,7 +39,7 @@ alias kcf="kubectl apply -f"
 alias kcbash="kubectl run bash -it --generator=run-pod/v1 --rm --image=node bash"
 
 # Make it easy to make it easy...
-alias aliases="vim ~/.bash_aliases && source ~/.profile"
+alias aliases="vim ~/.bash_aliases && source ~/.bash_aliases"
 alias spro="source ~/.profile"
 
 alias json='pbpaste | python -m json.tool | less'
