@@ -1,6 +1,7 @@
 # Aliases for 'php artisan '
 alias art='php artisan'
 alias artisan='php artisan'
+alias sail='./vendor/bin/sail'
 
 alias ll='ls -al'
 
@@ -12,10 +13,11 @@ alias gf='git fetch'
 alias gc='git add . && git commit -m '
 alias gco='git checkout'
 alias gpr='git pull --rebase'
+alias grh='git reset --hard'
 
 # Git branch aliases
 alias gbcurrent="git branch | grep \* | cut -d ' ' -f2" # "git branch current"
-alias gbDa='git branch | egrep -v "(master|\*)" | xargs git branch -D' # "git branch delete all"
+alias gbDa='git branch | egrep -v "(main|master|\*)" | xargs git branch -d' # "git branch delete all"
 alias gbn='git fetch && git checkout origin/master && git checkout -b' # "git branch new"
 
 # Git reset aliases
@@ -27,6 +29,9 @@ alias tml='tmux list-sessions'
 alias tma='tmux attach -t '
 alias tmn='tmux new -s '
 
+# VS Code
+alias c='code .'
+
 # MacOS
 alias finder='open'
 
@@ -37,10 +42,15 @@ alias dc="docker-compose"
 alias kc="kubectl"
 alias kcf="kubectl apply -f"
 alias kcbash="kubectl run bash -it --generator=run-pod/v1 --rm --image=node bash"
+alias kccon="kubectl config current-context"
+alias kcuse="kubectl config use-context"
+
+alias argoport="kubectl port-forward svc/argocd-server -n argocd 8080:443"
 
 # Make it easy to make it easy...
-alias aliases="vim ~/.bash_aliases && source ~/.profile"
-alias spro="source ~/.profile"
+alias aliases="vim ~/.bash_aliases && source ~/.zshrc"
+alias spro="source ~/.zshrc"
+alias notes="vim ~/Documents/notes.md"
 
 alias json='pbpaste | python -m json.tool | less'
 
