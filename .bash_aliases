@@ -21,8 +21,8 @@ alias gbDa='git branch | egrep -v "(main|master|\*)" | xargs git branch -d' # "g
 alias gbn='git fetch && git checkout origin/master && git checkout -b' # "git branch new"
 
 # Git reset aliases
-alias grorigin="git fetch && sleep 1 && git reset --hard origin/$(gbcurrent)" # "git reset origin"
-alias grs="git reset --soft $(git merge-base master $(gbcurrent)) && git status" # "git reset soft"
+#alias grorigin="git fetch && sleep 1 && git reset --hard origin/$(gbcurrent)" # "git reset origin"
+#alias grs="git reset --soft $(git merge-base master $(gbcurrent)) && git status" # "git reset soft"
 
 # Aliases for Tmux
 alias tml='tmux list-sessions'

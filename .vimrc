@@ -1,7 +1,9 @@
 "Settings for VIM
 
-" Use Vundle package manager
-"  git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+" Use Vundle package manager:
+"
+"  1. git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+"  2. From within vim, run :PluginInstall
 set nocompatible              " be iMproved, required
 filetype off                  " required
 
@@ -40,6 +42,9 @@ let g:vim_markdown_folding_disabled = 1
 "-----------------------------------
 " Colors
 :syntax on
+
+" Install the Darcula theme:
+"   wget -P ~/.vim/colors https://raw.githubusercontent.com/blueshirts/darcula/master/colors/darcula.vim
 :colorscheme darcula
 
 
