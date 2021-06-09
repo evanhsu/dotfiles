@@ -35,11 +35,8 @@ export PATH=${PATH}:${ANDROID_HOME}/platform-tools
 # export PATH=${PATH}:${JAVA_HOME}/bin
 
 # Add NVM to path
-if [ -f $HOME/.nvm ]; then
-    export NVM_DIR="$HOME/.nvm"
-    [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-    nvm alias default lts/dubnium
-fi
+export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
 
 # Yarn
 command -v yarn >/dev/null 2>&1 && {
@@ -81,3 +78,4 @@ if [ -f ~/.git-completion.bash ]; then
   # Add git completion to aliases
   __git_complete gco _git_checkout
 fi
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
