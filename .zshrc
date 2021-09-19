@@ -9,6 +9,10 @@ if [ -f ~/.bash_aliases ]; then
     . ~/.bash_aliases
 fi
 
+if [ -f ~/.profile ]; then
+    . ~/.profile
+fi
+
 # nvm
 # https://github.com/nvm-sh/nvm#installing-and-updating
 NVM_DEFAULT_VERSION=lts/fermium

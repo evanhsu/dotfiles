@@ -47,7 +47,8 @@ command -v yarn >/dev/null 2>&1 && {
 export PATH="/usr/local/sbin:$PATH"
 
 # Add python scripts to PATH
-# export PATH="~/Library/Python/2.7/bin:$PATH"
+export PATH="$HOME/Library/Python/2.7/bin:$PATH"
+export PATH="$HOME/Library/Python/3.9/bin:$PATH"
 
 # Add composer vendor code to path (Laravel installer)
 # export PATH="~/.composer/vendor/bin:$PATH"
@@ -59,6 +60,10 @@ export PATH="/usr/local/sbin:$PATH"
 #export PATH="~/Development/grpc/bins/opt:$PATH"
 #export PATH="/Users/ehsu2/Development/grpc/bins/opt:$PATH"
 #export PATH="/Users/ehsu2/Development/grpc/bins/opt/protobuf:$PATH"
+
+# Set KUBECONFIG (for the kubectl cli)
+export KUBECONFIG="$HOME/.kube/config-smirk"
+export KUBECONFIG="$HOME/.kube/config-liiingo:$KUBECONFIG"
 
 # PhpStorm
 export PATH=${PATH}:/opt/phpstorm/bin
